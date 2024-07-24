@@ -17,3 +17,9 @@ j i
 .
 .
 ```
+
+the big picture: for independent nested loop, the running time _multiply_, up to a constant.
+
+## Swap 1 example
+
+this is a constant time algorithm because the running time is _independent_ of n (input size)
