@@ -25,7 +25,7 @@ the big picture: for independent nested loop, the running time _multiply_, up to
 
 this is a constant time algorithm because the running time is _independent_ of n (input size)
 
-## Exponential
+## Exponential - Power of 2
 
 i keeps growing until it is equal to n. And we have k iterations up to that point. If we have k iterations, the last iteration is k-1 as we started with power 0.
 
@@ -52,3 +52,7 @@ so,
 k-1 = floor(log n)
 k = 1 + floor(log n)
 ```
+
+what's important is that k is roughly log n.
+
+## Nested loops
