@@ -4,3 +4,4 @@ def nested_loop(n):
             print(i+j)
 
 nested_loop(2)
+
