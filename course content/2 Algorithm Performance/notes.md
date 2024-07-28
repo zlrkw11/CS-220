@@ -56,3 +56,28 @@ k = 1 + floor(log n)
 what's important is that k is roughly log n.
 
 ## Nested loops
+
+### Relation between variables
+
+```
+for i <- 1 to n do:
+    for j <- i to n do:
+        C operations
+```
+
+in this case, despite there are 2 changing variables i & j, but essentially there is only one thing that we need to calculate.
+
+which is the number of times the inner loop runs, because each iteration is constant time operations.
+
+so i does not really change how many times C runs in every iteration of the inner loop but merely just a varible that limits the total iteration number of the inner loop.
+
+j i # of iterations
+1 1 n
+2 2 n-1
+3 3 n-2
+...
+n n 1
+
+so, 1,2,3,...n iterations. Using the formula to get sum:
+n(n+1)/2
+is the total number of times C will run.
