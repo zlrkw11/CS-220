@@ -71,12 +71,13 @@ which is the number of times the inner loop runs, because each iteration is cons
 
 so i does not really change how many times C runs in every iteration of the inner loop but merely just a varible that limits the total iteration number of the inner loop.
 
-j i # of iterations
-1 1 n
-2 2 n-1
-3 3 n-2
-...
-n n 1
+j | i | number of inner loop iteration
+--- | --- | --- |
+1 | 1 | n
+2 | 2 | n-1
+3 | 3 | n-2
+... | | 
+n | n | 1
 
 so, 1,2,3,...n iterations. Using the formula to get sum:
 n(n+1)/2
