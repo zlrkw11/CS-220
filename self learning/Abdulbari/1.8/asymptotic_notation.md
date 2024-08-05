@@ -14,6 +14,8 @@ f(n) <= C*g(n)
 so, f(n) is O(g(n))
 
 anything on the right of the chart of runtime complexity will be an upper bound of f(n), anything left will be a lower bound. n will be an avg bound.
+
 ### big Omega
+The function f(n) is big omega of g(n) if and only if there exists a positive constant **C and N0** such that f(n) >= C*g(n) for all n >= n0.
 ### theta
 
