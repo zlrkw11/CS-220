@@ -17,5 +17,12 @@ anything on the right of the chart of runtime complexity will be an upper bound 
 
 ### big Omega
 The function f(n) is big omega of g(n) if and only if there exists a positive constant **C and N0** such that f(n) >= C*g(n) for all n >= n0.
+
+f(n) = 2n+3
+2n+3 >= 1 * n
+for all n>=1 (n0)
+stands true
+
+so f(n) is omega of n.
 ### theta
 
