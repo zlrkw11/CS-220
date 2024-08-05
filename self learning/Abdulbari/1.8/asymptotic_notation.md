@@ -1,6 +1,8 @@
 # Asymptotic Notation
 
 ## 3 notations
+
+1 < logn < sqrt(n) < n < nlogn < n^2 < n^3 ... < 2^n < 3^n < ... n^n 
 ### big O
 The function f(n) = O(g(n)) if and only if there exists positive constants **C & N0** such that f(n) <= C*g(n) for all n greater than N0.
 
@@ -10,6 +12,8 @@ f(n) = 2n+3
 f(n) <= C*g(n)
 
 so, f(n) is O(g(n))
+
+anything on the right of the chart of runtime complexity will be an upper bound of f(n), anything left will be a lower bound. n will be an avg bound.
 ### big Omega
 ### theta
 
