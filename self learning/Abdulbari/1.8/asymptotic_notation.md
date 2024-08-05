@@ -25,4 +25,10 @@ stands true
 
 so f(n) is omega of n.
 ### theta
+the function f(n) = theta(g(n)) if and only if there exists a positive constant c1 c2 and n0 such that c1*g(n) <= f(n) <= c2*g(n)
 
+example:
+1*n <= 2n+3 <= 5n
+c1gn    fn     c2gn
+
+we can say, fn is theta(same) as g(n) which n.
