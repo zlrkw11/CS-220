@@ -1,4 +1,4 @@
-a = [3,4,5]
+a = [5,2,9,1,6]
 
 def inssort(a):
     n = len(a)
@@ -12,7 +12,24 @@ def inssort(a):
             insert(a, j, t)
 
 def insert(a, j, t):
-    pass
+    temp = []
+    while len(a)>j:
+        temp.append(a.pop())
+    a.append(t)
+    while temp:
+        a.append(temp.pop())
 
 def erase(a, i):
-    pass
+    # [5,2,9,1,6] -> [2,5,9,1,6]
+    temp = []
+    while len(a) > i+1:
+        temp.append(a.pop())
+    removed_item = a.pop()
+    for i in range(len(temp)):
+        a.append(temp.pop())
+    return removed_item
+
+
+inssort(a)
+print(a)
+    
