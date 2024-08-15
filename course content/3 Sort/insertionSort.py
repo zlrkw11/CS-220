@@ -1,4 +1,5 @@
 def inssort(a):
+    counter = 0
     n = len(a)
 
     for i in range(n):
@@ -6,9 +7,14 @@ def inssort(a):
 
         while j>0 and a[j] < a[j-1]:
             a[j], a[j-1] = a[j-1], a[j]
+            counter += 2
             j-=1
-    return a
+            
+    return counter
 
-a = [5,3,4,1,2]
+a = [9,8,7,6,5]
 
-print(inssort(a))
+
+print("unsorted list:", a)
+print("number of memory write operations:", inssort(a))
+print("sorted list:", a)
