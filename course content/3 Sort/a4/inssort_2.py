@@ -27,6 +27,7 @@ def erase(a, i):
 
     for index in range(i, len(a)-1):
         a[index] = a[index+1]
+        
     a.pop()
     return temp
 
