@@ -34,8 +34,8 @@ n * log(n)
 ````
 
 ## Procedure
-ORG Array: [9,3,7,5,6,4,8,2]
-
+ORG Array: ````[9,3,7,5,6,4,8,2]````
+````
 1 ~ 4
 [9,3,7,5]
 
@@ -53,9 +53,21 @@ ORG Array: [9,3,7,5,6,4,8,2]
 
 4
 [5]
-
-we now have 4 elements separated, we merge. Which re-arranges the order and merge the 4 small lists into 1: [3,5,7,9].
+````
+we now have 4 elements separated, we merge. Which re-arranges the order and merge the 4 small lists into 2 lists of 2s and then finally into 1: ````[3,5,7,9]````.
 
 same goes for the other list:
-we get [6] [4] [8] [2]
-call merge function and we get [2,4,6,8].
+we get ````[6] [4] [8] [2]````
+call merge function and we get ````[2,4,6,8]````.
+
+Then call merge on the 2 lists of 4 items:
+we get 
+````
+[2,3,4,5,6,7,8,9]
+````
+
+## Time Complexity
+````
+T(n) = 2 * T(n/2) + n
+````
+when n is >= 1 as it does not do anything.
