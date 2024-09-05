@@ -1,6 +1,7 @@
 # Merge Sort
 ## Algorithm:
 
+*note low and high are indices
 ````
 Function MergeSort(l, h):
     if (l < h):
@@ -29,5 +30,27 @@ n elements are merged
 3 levels for 8 elements.
 which is 
 ````
-log(n)
+n * log(n)
 ````
+
+## Procedure
+ORG Array: [9,3,7,5,6,4,8,2]
+
+1 ~ 4
+[9,3,7,5]
+
+1 ~ 2   3 ~ 4
+[9,3]   [5,7]
+
+1
+[9]
+
+2
+[3]
+
+3
+[7]
+
+4
+[5]
+
