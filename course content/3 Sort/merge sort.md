@@ -54,3 +54,8 @@ ORG Array: [9,3,7,5,6,4,8,2]
 4
 [5]
 
+we now have 4 elements separated, we merge. Which re-arranges the order and merge the 4 small lists into 1: [3,5,7,9].
+
+same goes for the other list:
+we get [6] [4] [8] [2]
+call merge function and we get [2,4,6,8].
