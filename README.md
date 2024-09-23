@@ -17,5 +17,5 @@ n = int(sys.stdin.readline().strip())
 for reading each line of file
 
 ```
-print(' '.join(map(str, row)))
+row = sys.stdin.readline().strip().split()
 ```
