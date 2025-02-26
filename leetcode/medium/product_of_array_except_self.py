@@ -5,6 +5,8 @@ class Solution(object):
         :rtype: List[int]
         """
         arr = []
+        if all(num==0 for num in nums):
+            return [0]*len(nums)
         for i in range(len(nums)):
             o = [n for n in nums if n != nums[i]]
             p = 1
@@ -14,6 +16,6 @@ class Solution(object):
         return arr
 
 solution = Solution()
-print(solution.productExceptSelf([-1,1,0,-3,3]))
+print(solution.productExceptSelf([0,0]))
 
 
