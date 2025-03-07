@@ -1,12 +1,13 @@
 from typing import List
 class Solution:
     def removeStars(self, s: str) -> str:
-        arr = []
-        
-        for i in range(len(s)):
-            pass
-        
-        return str(arr)
+        ans = []
+        for c in s:
+            if c=="*":
+                ans.pop()
+            else:
+                ans.append(c)
+        return ''.join(ans)
 # "*"
 
 solution = Solution()
