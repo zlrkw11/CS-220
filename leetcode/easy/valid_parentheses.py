@@ -6,7 +6,7 @@ class Solution:
         for c in s:
             if c in "([{":
                 stack.append(c)
-            elif not stack or c + stack.pop() not in d:
+            elif not stack or stack.pop()+c not in d:
                 return False
         return not stack
     
